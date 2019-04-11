@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#cccccc</color>
+    <color name="grey_700">#646464</color>
+    <color name="black">#000000</color>
+
+    <color name="sunshine_light_blue">#ff64c2f4</color>
+    <color name="sunshine_blue">#ff1ca8f4</color>
+    <color name="sunshine_dark_blue">#0288D1</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorPrimary">#673bb7</color>
+    <color name="colorPrimaryDark">#512da7</color>
+    <color name="colorAccent">#ff5521</color>
+    <color name="teal">#00867d</color>
+
+    <color name="stroke">#dedede</color>
+    <color name="red">#f26644</color>
+    <color name="red_transparent">#2cfa365c</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="dark_grey">#2b3338</color>
+    <color name="light_grey">#a6a6a6</color>
+    <color name="silver">#f4f5f6</color>
+    <color name="silver_dark">#dee1e4</color>
+    <color name="textLight">#dddddd</color>
+    <color name="actionButton">#bbbbbb</color>
+    <color name="divider">#dddddd</color>
+    <color name="headerBackground">#eeeeee</color>
+    <color name="green_bg">#664caf50</color>
+    <color name="green_text">#4caf50</color>
+    <color name="red_bg">#59f44336</color>
+    <color name="red_text">#f44336</color>
+    <color name="scrim_grey">#1A000000</color>
+    <color name="colorPrimaryLight">#82e9de</color>
+
+</resources>

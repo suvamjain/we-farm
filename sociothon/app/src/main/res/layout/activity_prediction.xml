@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/get_prediction_form"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:windowSoftInputMode="adjustResize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/prefer_months"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="Predict for duration*"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:weightSum="2.5">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:popupBackground="@color/silver_dark"
+                style="@android:style/Widget.Holo.Spinner"
+                android:id="@+id/strtMnthSpinner"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="@color/white"
+                android:text="─"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:popupBackground="@color/silver_dark"
+                style="@android:style/Widget.Holo.Spinner"
+                android:id="@+id/endMnthSpinner"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/temperature"
+            style="@style/SignupEditText"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="number"
+            android:maxLength="3"
+            android:hint="Current Temperature (in °C)*" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/zone"
+                style="@style/SignupEditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginRight="3dp"
+                android:singleLine="false"
+                android:maxLines="2"
+                android:focusable="false"
+                android:clickable="true"
+                android:hint="Zone*" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/village"
+                style="@style/SignupEditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:inputType="textCapCharacters"
+                android:hint="Village" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/pH"
+                style="@style/SignupEditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginRight="3dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:hint="pH value*" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/nitro"
+                style="@style/SignupEditText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:layout_marginLeft="3dp"
+                android:hint="Nitrogen*"
+                android:inputType="numberDecimal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/phosp"
+                style="@style/SignupEditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginRight="3dp"
+                android:inputType="numberDecimal"
+                android:hint="Phosphorus*" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/potass"
+                style="@style/SignupEditText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:layout_marginLeft="3dp"
+                android:hint="Potassium*"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="Predict Crops"
+            android:padding="12dp"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/holo_orange_light"
+            android:textAllCaps="false"
+            android:id="@+id/showCrops"
+            android:onClick="predictCrops"
+            android:textSize="18sp"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameCropPredicted"
+        android:clickable="true"
+        android:background="#E6000000"
+        android:padding="8dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
