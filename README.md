@@ -14,3 +14,5 @@ An AI configured chatbot already trained on agriculture related queries and topi
 To help the farmer from the hassle to go to the mandi and sell their crops in a lower price because of the monopoly of the buyers there, the application has an in-built e-commerce where the farmer can sell their produce at the price decided by the government for that day so that they are not cheated by the buyers. Also, the farmers can buy quality seeds from the e-store based on his needs at government subsidized prices.
   - **News**:
 To keep the users up to date with the latest government schemes and news in the agricultural sector the user is notified with the latest news using the TOI news API.
+
+#### Demo [screenshots](https://github.com/suvamjain/we-farm/tree/master/demo_screenshots) can be seen here
